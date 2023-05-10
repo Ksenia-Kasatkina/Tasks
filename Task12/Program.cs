@@ -11,14 +11,17 @@ Console.WriteLine("Введите второе число ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 int result = Remainder(numberA, numberB);
 
-if (result == 0)
-{
-    Console.Write("Кратно");
-}
-else
-{
-    Console.Write($"Остаток от деления = {result}");
-}
+// if (result == 0)
+// {
+//     Console.Write("Кратно");
+// }
+// else
+// {
+//     Console.Write($"Остаток от деления = {result}");
+// }
+
+string res = (result == 0) ? "Кратно" : $"Остаток от деления = {result}";
+Console.Write(res);
 
 int Remainder(int numA, int numB)
 {
